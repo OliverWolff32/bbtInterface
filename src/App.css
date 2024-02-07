@@ -1,38 +1,138 @@
-.App {
+.Container {
+  height: 100%;
+  width: flex;
+  margin: none; 
+}
+
+div {
+  margin: 5px; 
+  /* border: 1px solid red;  */
+}
+
+.single-episode {
+  background-color: rgb(200,200,200);
+  border: 1px solid rgb(50,50,50);
+  justify-content: center;
+  display: inline-flex;
+}
+
+.single-episode-title {
+  max-width: 80%;
+}
+
+.info-container {
+  overflow: scroll;
+  flex: 1;
+  text-align: center;
+  display: grid; 
+}
+
+.info-data {
+  background-color: rgb(200,200,200);
+  border: 1px solid rgb(50,50,50);
+  justify-content: center;
+  display: inline-flex;
+  color: rgb(25,25,25); 
+}
+
+.info-description {
+  background-color: rgb(200,200,200);
+  border: 1px solid rgb(50,50,50);
+  justify-content: center;
+  display: inline-flex;
+  color: rgb(25,25,25); 
+}
+
+.info-image {
+  width: 100%; 
+  min-width: 300px;
+}
+
+.info-title {
+  background-color: rgb(200,200,200);
+  border: 1px solid rgb(50,50,50);
+  justify-content: center;
+  display: inline-flex;
+  color: rgb(25,25,25); 
+}
+
+.list-container {
+  overflow: scroll;
+  flex: 1;
+  text-align: center;
+  display: inline-block;
+}
+
+.Header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(50, 50, 50);
+  background-color: rgb(220, 220, 220);
+  height: 50px;
+  
+  min-width: 500px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: rgb(50,50,50);
+  margin: none; 
+  flex: 1; 
+}
+
+.episodes {
+  width: 100%;
+  border-spacing: 5px;
+  display: inline-flex;
+}
+
+.episode-list {
+  max-width: 40%;
+  background-image: url("./img/sheldon.jpeg");
+  background-size: contain;
+  height: 500px; 
+  display: flex;
+  flex-direction: column;
+  align-items: top;
+  justify-content: top; 
+}
+
+.episode-info {
+  width: 100%;
+  background-color: lightgreen;
+  height: 500px; 
+  overflow: scroll;
+}
+.info-header {
+  background-color: rgb(200,200,200);
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(50,50,50);
+  font-weight: bold;
+  font-size: 20px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.list-header {
+  background-color: rgb(200,200,200);
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(50,50,50);
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.Ad {
+  height: 100px;
+  width: 100%;
+  font-size: 60px; 
+  font-weight: bolder; 
+  font-family: 'Times New Roman', Times, serif;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  display: inline-flex;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Laugh {
+  width: 100px;
 }
